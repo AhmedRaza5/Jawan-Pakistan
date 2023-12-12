@@ -34,7 +34,7 @@ const data = [
     "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
     "image_url": "https://i.imgur.com/KeqG6r4.jpeg"
     }
-    ]
+    ];
 
     const id = document.getElementById('cards');
 
@@ -48,7 +48,6 @@ const data = [
                      <p class="card-text">${element.description}</p>
                  </div>
              </div>`
-        console.log(element)
         
     }
 
