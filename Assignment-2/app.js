@@ -38,21 +38,15 @@ const data = [
 
     const id = document.getElementById('cards');
 
-     for (let i = 0; i < data.length; i++) {
-        const element = data[i];
-        id.innerHTML += `<div class="card col-6 pt-2" style="width: 18rem;">
-                <img src=${element.image_url} class="card-img-top" alt="Image">
+     data.map((card,i) => {
+      
+        return(  id.innerHTML += `<div key=${i} class="card col-6 pt-2" style="width: 18rem;">
+                <img src=${card.image_url} class="card-img-top" alt="Image">
                  <div class="card-body">
-                     <h5 class="card-title">${element.title}</h5>
-                     <p>Rs. ${element.price}</p>
-                     <p class="card-text">${element.description}</p>
+                     <h5 class="card-title">${card.title}</h5>
+                     <p>Rs. ${card.price}</p>
+                     <p class="card-text">${card.description}</p>
                  </div>
              </div>`
-        
-    }
-
-
-
-
-
-   
+        )
+    })
