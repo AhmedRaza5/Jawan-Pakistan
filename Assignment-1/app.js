@@ -40,16 +40,18 @@ const data = [
 
      for (let i = 0; i < data.length; i++) {
         const element = data[i];
+        const {title, price, description, image_url:image} = element;
+
         id.innerHTML += `<div class="card col-6 pt-2" style="width: 18rem;">
-                <img src=${element.image_url} class="card-img-top" alt="Image">
+                <img src=${image} class="card-img-top" alt="Image">
                  <div class="card-body">
-                     <h5 class="card-title">${element.title}</h5>
-                     <p>Rs. ${element.price}</p>
-                     <p class="card-text">${element.description}</p>
+                     <h5 class="card-title">${title}</h5>
+                     <p>Rs. ${price}</p>
+                     <p class="card-text">${description}</p>
                  </div>
              </div>`
         
-    }
+    };
 
 
 
