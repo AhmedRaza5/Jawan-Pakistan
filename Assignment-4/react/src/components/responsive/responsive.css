@@ -1,0 +1,21 @@
+.responsive{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0px !important;
+}
+.res1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+  }
+.res1 h1{
+  margin-bottom: 10px;
+}
+.res2{
+  overflow-y: hidden;
+}
+.res2 img{
+  width: 100%;
+  height: 100%;
+}

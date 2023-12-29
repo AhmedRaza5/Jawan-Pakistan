@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* Bootstrap */
+.boot{
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 0;
+
+}
+.bootBox{
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bootBox p{
+  color: #6e6e6e;
+}
+
+/* Testimonial */
+.testimonial{
+  background-color: #f1f1f1;
+  padding: 60px 0;
+}
+.testimonial h1{
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.parentBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.box{
+  width: 300px;
+  text-align: center;
+}
+.box img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.box h4{
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer{
+  padding: 40px 80px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer1 ul {
+  display: flex;
+  list-style-type: none;
+}
+.footer1 ul li{
+
+  color: #256BD3;
+}
+.footer1 p{
+  margin-top: 20px;
+  color: #6e6e6e;
+}
+.li{
+  display: flex;
+}
+.li span{
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+}
+.footer2{
+  display: flex;
+  gap: 20px;
+}
