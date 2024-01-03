@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.spebtn button{
+    color: red;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid red;
+    cursor: pointer; 
+}
+.spebtn button:hover{
+    background-color: red;
+    color: white;
+}
