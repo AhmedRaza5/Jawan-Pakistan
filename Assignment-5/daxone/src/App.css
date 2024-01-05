@@ -8,8 +8,12 @@
     padding: 10px 20px;
     border: 1px solid red;
     cursor: pointer; 
+    transition: all 0.5s ease 0s;
+
 }
 .spebtn button:hover{
     background-color: red;
     color: white;
+    transition: all 0.5s ease 0s;
+
 }

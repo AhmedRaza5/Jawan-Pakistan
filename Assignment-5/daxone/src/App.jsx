@@ -5,6 +5,8 @@ import Banner from './components/banner'
 import Poster from './components/poster'
 import ProductList1 from './components/productList1'
 import ProductList2 from './components/productList2'
+import Winter from './components/winter'
+import Footer from './components/footer'
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
   <Banner/>
   <Poster/>
   <ProductList1/>
+  <Winter/>
   <ProductList2/>
+  <Footer/>
     </>
   )
 }

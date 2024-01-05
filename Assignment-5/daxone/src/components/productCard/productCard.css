@@ -1,5 +1,6 @@
 .productCard1{
 position: relative;
+
 }
 .productCard1 img{
     width: 100%;
@@ -36,4 +37,27 @@ position: relative;
 }
 .productCard2 h2{
    font-weight: bolder;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price p{
+    color: red;
+}
+.price p:hover{
+    color: #373737;
+}
+.price a{
+    opacity: 0;
+    visibility: hidden;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+.productCard:hover .price a{
+    opacity: unset;
+    visibility: visible;
+    display: block;
+    transition: all 0.5s ease 0s;
+    transform: translateX(-10px);
 }

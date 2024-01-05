@@ -1,0 +1,44 @@
+.winter{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.innerWinter{
+    margin-top: 140px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.winter1{
+    position: relative;
+}
+.winter1::before{
+    content: "";
+    background-color: #fff6f6;
+    height: calc(100% - 30px);
+    left: -70px;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    z-index: -1;
+}
+.winter2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+.winter2 p{
+    color: #737373;
+    font-size: 14px;
+}
+.winter2 h1{
+    margin: 20px 0;
+    font-size: 40px;
+    color: #383838;
+}
+.winter2 p:nth-child(3){
+    margin-bottom: 20px;
+}
