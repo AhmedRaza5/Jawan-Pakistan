@@ -2,6 +2,7 @@ import React from 'react'
 import './banner.css'
 import Button from '../button'
 import Navbar from '../navbar'
+import img from '../../assets/img/banner-1.webp'
 
 const Banner = () => {
   return (
@@ -11,7 +12,7 @@ const Banner = () => {
     <div className='bannerinner'>
 
     <div className='banner1'>
-        <img src="/src/assets/img/banner-1.webp" alt="Image" />
+        <img src={img} alt="Image" />
     </div>
     <div className='banner2'>
         <h3>30% off</h3>

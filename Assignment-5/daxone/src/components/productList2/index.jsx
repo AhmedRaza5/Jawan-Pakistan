@@ -5,53 +5,53 @@ import ProductCard from '../productCard'
 const ProductList2 = () => {
     const data =[
         {
-          img: '/src/assets/img/tab-1.webp',
+          img: '/img/tab-1.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210'
         },
         {
-          img: '/src/assets/img/tab-2.webp',
+          img: '/img/tab-2.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
           sale: '-30%'
         },
         {
-          img: '/src/assets/img/tab-3.webp',
+          img: '/img/tab-3.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
         },
         {
-          img: '/src/assets/img/tab-4.webp',
+          img: '/img/tab-4.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
           sale: 'New'
         },
         {
-          img: '/src/assets/img/tab-5.webp',
+          img: '/img/tab-5.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
           sale: 'Stock Out'
         },
         {
-          img: '/src/assets/img/tab-6.webp',
+          img: '/img/tab-6.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
         },
         {
-          img: '/src/assets/img/tab-7.webp',
+          img: '/img/tab-7.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
           sale: 'New'
         },
         {
-          img: '/src/assets/img/tab-8.webp',
+          img: '/img/tab-8.webp',
           para: 'Chair',
           heading: 'Golden Easy Spot Chair',
           price: '210',
