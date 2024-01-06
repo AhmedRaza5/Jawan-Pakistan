@@ -5,7 +5,7 @@ const ProductCard = (props) => {
   return (
     <div className='productCard'>
         <div className='productCard1'>
-          <a href="#">
+          <a href="#/">
             <img src={props.img} alt="Image"/>
           </a>
             <div className='sale' style={{display:props.display, left:props.left}}>
