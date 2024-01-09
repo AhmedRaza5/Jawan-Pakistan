@@ -1,0 +1,25 @@
+.productBanner{
+    display: flex;
+    margin-top: -78px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/public/img/banner-bg-3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 60px;
+}
+.content p{ 
+    font-size: 18px;
+    margin-top: 10px;
+}
+.content span{
+    color: red;
+}
+.content a{
+    text-decoration: none;
+    color: #373737;
+}

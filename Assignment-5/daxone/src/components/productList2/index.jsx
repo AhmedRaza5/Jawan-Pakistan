@@ -3,9 +3,8 @@ import './productList2.css'
 import ProductCard from '../productCard'
 import Modal from '../modal';
 
-const ProductList2 = () => {
+const ProductList2 = ({sendData,setOpen}) => {
   const [cardData, setCardData] = useState();
-  const [isModalOpen, setIsModalOpen] = useState(false);
     const data =[
         {
           id: 1,
@@ -71,12 +70,11 @@ const ProductList2 = () => {
       const handleCardClick = (productId)=>{
         const find = data.find(product => product.id === productId);
         setCardData(find);
-        setIsModalOpen(true);
+        sendData(find);
+        setOpen(true);
       };
       
-      const closeModal = () => {
-        setIsModalOpen(false);
-      };
+     
       console.log(cardData);
   return (
     <div className='productList2'>
@@ -93,10 +91,10 @@ const ProductList2 = () => {
         )
       })}
     </div>
-    <Modal
-    isOpen={isModalOpen}
+    {/* <Modal
+    isOpen={Open}
     onClose={closeModal}
-    product={cardData}/>
+    product={cardData}/> */}
     </div>
   )
 }
