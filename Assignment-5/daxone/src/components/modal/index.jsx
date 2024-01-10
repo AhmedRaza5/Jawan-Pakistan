@@ -3,6 +3,7 @@ import './modal.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeCompare, faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import ProductBanner from '../productBanner';
+import ProductDetailsTabs from '../ProductDetailsTabs';
 
 const Modal = ({ isOpen, onClose, product }) => {
   return (
@@ -66,6 +67,7 @@ const Modal = ({ isOpen, onClose, product }) => {
         </div>
       )}
     </div>
+    <ProductDetailsTabs/>
     </>
   );
 };
