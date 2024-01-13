@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Input from './input'
+import Input from '../input'
 
 const Todo = () => {
   const [data, setData] = useState({});
