@@ -1,0 +1,29 @@
+.swiper-pagination-bullet-active {
+    background-color: rgb(254, 238, 0) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 6px 12px;
+    border-radius: 50%;
+    color: #000 !important;
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    
+}
+
+.swiper-button-next::after,
+          .swiper-button-prev::after {
+            content: ""!important;
+          }
+.swiper-button-prev {
+    background-image: url("/public//img/left.svg");
+    
+  }
+
+  .swiper-button-next {
+    background-image: url("/public//img/right.svg");
+  }
+ 
