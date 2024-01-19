@@ -41,7 +41,7 @@ const Trending = () => {
             clickable: true,
         }} autoplay={{
             delay: 2500,
-        }}/>
+        }} width='100%'/>
         </Box>
         </>
   )

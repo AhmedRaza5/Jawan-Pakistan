@@ -19,7 +19,7 @@ export default function Banner() {
             delay: 2500,
           }} width={1000} pagination={{
             clickable: true,
-        }}/>
+        }} />
 
       <Box sx={{display:'flex', width:'100%',maxWidth:'30%'}}>
         <img src="/img/banner9.avif" alt="BannerImage" width={1000} height={208}/>

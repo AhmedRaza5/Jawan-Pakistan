@@ -9,6 +9,8 @@ import InputBase from '@mui/material/InputBase';
 import { Divider, Input, List, ListItem, ListItemText } from '@mui/material';
 import { FaAngleDown, FaCaretDown, FaRegHeart } from "react-icons/fa";
 import { IoCartOutline, IoPersonOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import Login from '../../pages/login';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import SearchIcon from '@mui/icons-material/Search';
 
@@ -23,7 +25,9 @@ export default function Navbar() {
         <Box sx={{display:'flex', justifyContent:'space-between', width:'100%', alignItems:'center'}}>
         
             <Box sx={{display:'flex', gap:'20px'}}>
+              <Link to='/'>
             <img src="/img/logo.svg" alt="Logo" width={100}/>
+              </Link>
             <Box sx={{display:'flex', gap:'10px', alignItems:'center'}}>
                 <img src="/img/uae-flag.svg" alt="Flag" width={40} />
                 <Box  sx={{ fontSize:'12px'}}>
@@ -43,12 +47,14 @@ export default function Navbar() {
                 العربية
                     </p>
                 </Box>
+                <Link to='/login' style={{textDecoration:'none'}}>
                 <Box sx={{borderRight:'1px solid #ccc',  marginRight:'10px'}}>
                     <p style={{marginRight:'10px'}}>
                 Log in
                 <span style={{marginLeft:'5px'}}><IoPersonOutline color='gray' size={20}/></span>
                     </p>
                 </Box>
+                </Link>
                 <Box sx={{borderRight:'1px solid #ccc',  marginRight:'10px'}}>
                     <p style={{marginRight:'10px'}}>
                 Wishlist
