@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import Home from '../pages/home';
-import Private from './private';
-import Public from './public';
-import Login from '../pages/login';
+import Home from '../../pages/home';
+import Private from '../private';
+import Public from '../public';
+import Login from '../../pages/login';
 
 
 const router = createBrowserRouter(

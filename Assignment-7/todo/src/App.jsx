@@ -1,8 +1,7 @@
 
 import './App.css'
-import Todo from './components/todo'
-import ReactRouterConfig from './config/ReactRouterConfig'
-import Login from './pages/login'
+import ReactRouterConfig from './config/routerConfig'
+
 
 function App() {
   return (
