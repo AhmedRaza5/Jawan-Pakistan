@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Input from '../input'
+import { useNavigate } from 'react-router-dom';
 
 const Todo = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState({});
   const [currentData, setCurrentData] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
@@ -49,8 +51,17 @@ const Todo = () => {
     setCurrentData(arr)
   }
 
+  const logout =()=>{
+    localStorage.removeItem('login');
+    navigate('login')
+
+  }
   return (
     <>
+    <div className='flex justify-between p-4 bg-black text-white'>
+      <h1 className='text-2xl'>TODO</h1>
+      <button onClick={logout}>Logout</button>
+    </div>
       <h1 className='text-center mt-4 font-semibold text-2xl text-blue-800'>TODO APPLICATION</h1>
       <div className='m-12 flex flex-col md:flex-row gap-4'>
         <Input type='text' placeholder='Title' onchange={handleChange} id='title' />
