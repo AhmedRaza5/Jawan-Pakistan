@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Input } from '../input'
 import { useDispatch, useSelector } from 'react-redux'
 import { create, edit, remove } from '../../store/slice/todoList'
+import { useNavigate } from 'react-router-dom'
+import { signOut } from 'firebase/auth'
+import { auth } from '../../config/firebaseConfig'
+import { set_user_auth } from '../../store/slice/userData'
 
 const Todo = () => {
     const [data, setData] = useState({});
@@ -10,6 +14,16 @@ const Todo = () => {
 
     // console.log(data)
     const dispatch = useDispatch();
+    const navigate = useNavigate()
+
+    const logout = () =>{
+        signOut(auth).then((res)=>{
+            dispatch(set_user_auth(false))
+            navigate('/login')
+            
+        })
+    
+      }
 
     const handleChange = (value, key) => {
         setData(prevData => ({ ...prevData, [key]: value }));
@@ -39,6 +53,10 @@ const Todo = () => {
     // console.log(selector.length)
     return (
         <div>
+              <div className='flex justify-between p-4 bg-black text-white'>
+      <h1 className='text-2xl'>TODO</h1>
+      <button onClick={logout}>Logout</button>
+    </div>
             <h1 className='text-center mt-4 font-semibold text-2xl text-blue-800'>TODO APPLICATION</h1>
             <div className='m-12 flex flex-col md:flex-row gap-4'>
                 <Input type='text' placeholder='Title' onchange={handleChange} id='title' />

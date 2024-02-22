@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { useDispatch } from 'react-redux';
 import './App.css'
-import Todo from './components/todo'
+import Router from './config/Router'
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './config/firebaseConfig';
+import { set_user_auth } from './store/slice/userData';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  
 
   return (
     <>
-    <Todo/>
+    <Router/>
     </>
   )
 }
