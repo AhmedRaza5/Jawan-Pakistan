@@ -15,7 +15,7 @@ const Home = () => {
         if (user) {
           const uid = user.uid;
           dispatch(set_user_auth(true))
-         
+        
         } else {
           dispatch(set_user_auth(false))
           navigate('/login');

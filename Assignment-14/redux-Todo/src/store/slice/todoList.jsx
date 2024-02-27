@@ -13,11 +13,9 @@ export const todoList = createSlice({
       state.splice(action.payload, 1)
     },
     edit: (state, action) => {
-      const { id, newText } = action.payload;
-      const todoToEdit = state.find(todo => todo.id === id);
-      if (todoToEdit) {
-        todoToEdit.text = newText;
-      }
+      const {index,title,description} = action.payload;
+      state[index].title = title;
+      state[index].description = description
     }
   },
 })
