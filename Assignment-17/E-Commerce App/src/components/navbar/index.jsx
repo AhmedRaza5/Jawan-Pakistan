@@ -16,8 +16,8 @@ const Navbar = () => {
           dispatch(set_user_auth(false))
           navigate('/login')
       })
-  
     }
+    console.log(user.user_data,'hjvhgvgyu')
   
   return (
     <div className="bg-black h-20 px-3 flex items-center justify-between mb-4">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <div>
             {user.isLoggedIn ? 
               <div className="space-x-3 text-white font-medium">
-                <h2>Username</h2>
+                <h2>{user.user_data ? user.user_data.displayName : 'Username'}</h2>
                 <button onClick={logout_handle} >
                     Logout
                 </button>
